@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: java-app
-  replicas: 1
+  replicas: replicas: {{ .Values.deployment.replicaCount }}
   template:
     metadata:
       labels:
@@ -15,5 +15,4 @@ spec:
     spec:
       containers:
       - name: java-app
-        # image: pranavpk24/javaapp_k8s:1
         image: {{ .Values.image.repository }}
