@@ -14,4 +14,4 @@ spec:
           service:
             name: java-app-svc
             port:
-              number: 80
+              number: 80 
