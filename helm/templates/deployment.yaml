@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-app
+  namespace: {{ .Values.deployment.namespace }}
+spec:
+  selector:
+    matchLabels:
+      app: java-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: java-app
+    spec:
+      containers:
+      - name: java-app
+        # image: pranavpk24/javaapp_k8s:1
+        image: {{ .Values.image.repository }}
