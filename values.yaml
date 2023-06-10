@@ -1,0 +1,16 @@
+deployment:
+  name: java-deployment
+  namespace: dev
+  replicaCount: 2
+
+image:
+  repository: pranavpk24/javaapp_k8s:1
+  pullPolicy: Always
+  containerName: javawebapp
+  imagePullSecrets: dockerhub
+  containerPort: 80
+
+service:
+  type: ClusterIP
+  clusterIPPort: 80
+  targetPort: 8080
