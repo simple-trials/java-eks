@@ -1,7 +1,7 @@
 deployment:
   name: java-deployment
   namespace: dev
-  replicaCount: 2
+  replicaCount: 1
 
 image:
   repository: pranavpk24/javaapp_k8s:1
