@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: java-app
-  replicas: replicas: {{ .Values.deployment.replicaCount }}
+  replicas: {{ .Values.deployment.replicaCount }}
   template:
     metadata:
       labels:
