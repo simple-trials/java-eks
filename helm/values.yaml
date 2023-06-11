@@ -4,7 +4,7 @@ deployment:
   replicaCount: 1
 
 image:
-  repository: pranavpk24/javaapp_k8s:1
+  repository: pranavpk24/javaapp_k8s:26
   pullPolicy: Always
   containerName: javawebapp
   imagePullSecrets: dockerhub
