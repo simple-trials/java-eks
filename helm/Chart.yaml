@@ -1,4 +1,4 @@
-apiVersion: v3
+apiVersion: v2
 name: java app 
 description: A Helm chart for Kubernetes
 
