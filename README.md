@@ -66,8 +66,11 @@ Hurray !! Now you can access the `SonarQube Server` on `http://<ip-address>:9000
 
 ## Next Steps for deployment
 below is the jenkins pipeline added.
-for deploying in in kubernetes, use helm charts
+
+for deploying in in kubernetes, use helm charts.
+
 update the docker repo, and docker hub credentials, and git login
+
 update the image name from the values.yaml 
 
 ```
